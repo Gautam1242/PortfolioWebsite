@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/eb93dfa716.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="images/logo.png" class="logo" /> -->
+          <h1 style="color: #5468e8" id="first-nav">My Portfolio</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" id="first-nav" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm <br />
+            <span class="auto-type"></span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------about------------------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/master.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title" style="color: #5468e8">About Me</h1>
+            <p>
+              Hi my self Gautam Shah a dedicated web developer with a passion
+              for learning and mastering new technologies to find the solution
+              of real world problems. Hi I am pursuing my undergrad BCA
+              2022-2025 from Vivekananda Institute of Professional Studies
+              Technical Campus affiliated to GGSIPU (Guru Gobind Singh
+              Indraprastha University ).
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />
+                  <div class="skill-img">
+                    <img src="images/image3.png" alt="C" />
+                    <img src="images/image2.png" alt="C++" />
+                    <img src="images/java.png" alt="Java" />
+                    <img src="images/python.png" alt="Python" />
+                    <img src="images/php.png" alt="PHP" />
+                    <img src="images/image1.png" alt="HTML" />
+                    <img src="images/css.png" alt="CSS" />
+                    <img src="images/js.png" alt="JavaScript" />
+                  </div>
+                </li>
+                <li>
+                  <span>Framework , Libraries and Tools</span><br />
+                  <div class="skill-img">
+                    <img src="images/django.png" alt="Django" />
+                    <img src="images/bootstrap.png" alt="Bootstrap" />
+                    <img src="images/react.png" alt="React" />
+                    <img src="images/programing.png" alt="NodeJS" />
+                    <img src="images/social.png" alt="Git" />
+                    <img src="images/github.png" alt="GitHub" />
+                    <img src="images/postman-icon.png" alt="Postman" />
+                    <img
+                      src="images/visual-studio-code-icon.png"
+                      alt="VS Code"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <span>Databases </span><br />
+                  <div class="skill-img">
+                    <img src="images/mysql-icon.png" alt="MySQL DB" />
+                    <img src="images/mongodb-icon.png" alt="Mongo DB" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Frontend Developer Intern at IBM  <br/>Jun 2024-Aug 2024 | Delhi,India</span><br />➢ Working as a front-end summer intern at IBM  <br/>
+                  ➢ Developing a frontend project with my team using frontend technologies like
+                  HTML , CSS and JavaScript .<br/>
+                  ➢ Learn about fundamentals of web development and gain hands on experience
+                  through practical implementation of solving real world problems.
+                  <br/>➢<a href="https://gautam1242.github.io/FoodFlow/"> Live Project Link</a>
+                  <br/>➢<a href="https://github.com/Gautam1242/IBM_PROJECT"> GitHub Link</a>
+                </li>
+                <!-- <li>
+                  <span>Project - 2</span><br />Bubble Game using HTML , CSS and
+                  JavaScript.
+                </li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Vivekananda Institute Of Professional Studies Technical Campus | New Delhi , India | 2022 - 2025</span><br/>Bachelor's of Computer Applications ( CGPA - 9.3 ) 
+                </li>
+                <li>
+                  <span>National Public School | Science | 2022 |<br/> New Delhi,India </span
+                  ><br />Class 12 - 85.4%
+                </li>
+                <li>
+                  <span>National Public School | 2020 | <br/> New Delhi,India</span
+                  ><br />Class 10 - 82.8%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------services------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title" style="color: #5468e8">Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Frontend Development</h2>
+            <p>
+              A front-end developer builds the front-end portion of websites and
+              web applications—the part users see and interact with.
+            </p>
+            <a
+              href="https://www.w3schools.com/whatis/whatis_frontenddev.asp"
+              class="btn btn2"
+              style="background-color: #595254; margin-top: 50px"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <h2>Backend Development</h2>
+            <p>
+              Backend web development, also known as server-side development,
+              focuses on the parts of a website that are not visible to the
+              user. Backend developers are responsible for the website's
+              performance and ensure that it functions correctly.
+            </p>
+            <a
+              href="https://www.geeksforgeeks.org/backend-development/"
+              class="btn btn2"
+              style="background-color: #595254"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <h2>Full Stack Web Development</h2>
+            <p>
+              Full stack development is the process of developing both the
+              frontend and backend of applications.
+            </p>
+            <a
+              href="https://www.w3schools.com/whatis/whatis_fullstack.asp?external_link=true"
+              class="btn btn2"
+              style="background-color: #595254; margin-top: 62px"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------portfolio----------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title" style="color: #5468e8">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Food Flow</h3>
+              <p>
+                Food Flow is a website for food collection and distribution to
+                the people in need . Developed using HTML , CSS and JavaScript .
+                Responsive and user friendly design developed with my team
+                members .
+              </p>
+              <a href="https://gautam1242.github.io/FoodFlow/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Note Making App</h3>
+              <p>
+                Note Making App using Node JS , Express JS . You can make your
+                notes easily using this application .
+              </p>
+              <a href="https://notemakingapp.onrender.com/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>BUBBLE GAME</h3>
+              <p>
+                Simple and interesting event bubble game using HTML CSS and
+                JavaScript . Do check it out by clicking below .
+              </p>
+              <a href="https://gautam1242.github.io/Bubble-Game/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!------------------- -------------contact ----------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title" style="color: #5468e8">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>gautamshah317@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>8130319813</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/gautam-shah-234667252/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Gautam1242"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="/images/my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email "
+                required
+              />
+              <textarea
+                name="Message"
+                id="mess"
+                rows="6"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------------------copyright section ------------------------------------>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-regular fa-copyright"></i> 2024 Gautam Shah .
+          All rights reserved .
+        </p>
+      </div>
+    </div>
+
+    <!-- --------------javascript------------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Gautam Shah",
+          "Nice To Meet You",
+          "Coder",
+          "Problem Solver",
+        ],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzkGdBOth1qor2zqHvAqzWyZ_ICtGb1m4UYSLkQy-E5Xo6HXrzV3QjNsk3fpHyUlHtLwg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully...";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 1000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
